@@ -39,6 +39,7 @@ let questionNumber = 0;
 let score = 0;
 
 //generate question html
+
 function generateQuestion () {
   if (questionNumber < STORE.length) {
     return `<div class="question-${questionNumber}">
@@ -73,6 +74,7 @@ function generateQuestion () {
 }
 
 //increment question number
+
 function changeQuestionNumber () {
   //if (questionNumber < STORE.length) {
     questionNumber ++;
@@ -147,6 +149,7 @@ function updateScore () {
 }
 
 //when quiz is over this is the html for the page
+
 function renderResults () {
   if (score >= 8) {
     $('.questionAnswerForm').html(`<div class="results correctFeedback"><h3>You're on fire!</h3><img src="https://i.imgur.com/OPODnDn.gif" <p>You got ${score} / 10</p><p>You're ready to plan your backpacking trip!</p><button class="restartButton">Restart Quiz</button></div>`);
