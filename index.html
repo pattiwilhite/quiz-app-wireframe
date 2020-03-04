@@ -1,41 +1,30 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html>
   <head>
     <meta charset="utf-8">
-    <meta name="description" content="Graybox wireframe for quiz app ideas" />
-     <!-- Stylesheet and Google Fonts -->
-      <link href="wireframe.css" rel="stylesheet" type="text/css" />
-      <link href="https://fonts.googleapis.com/css?family=Overpass|Roboto&display=swap" rel="stylesheet">
-      <title>Singapore Random Facts Quiz App - Wireframe</title>
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="index.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Metrophobic" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="datastore.js"></script>
+    <script src="index.js"></script>
   </head>
   <body>
     <header>
-      <h1>Singapore Random Facts Quiz</h1>
-       <p>Are you a jetsetter? If so, here's a tricky quiz on what makes Singapore the little gem of Southeast Asia. Yes, Singapore, the beautiful island-city on the tip of Malaysia. If you didn't know that...this quiz may not be for you. If you did, take this quiz to find out if you've got the smarts, Singapore style!</p>
+      <div class="logo">Logo</div>
+      <ul>
+        <li>Question: <span class="questionNumber">0</span>/10</li>
+        <li>Score: <span class="score">0</span></li>
+      </ul>
     </header>
-    <!--Question Page-->
-      <form role="form" action="/quiz" accept-charset="UTF-8" class="quiz">
-        <fieldset>
-          <legend>
-            <p>You can't buy what in Singapore?</p>
-           </legend>
-              <ol type="A">
-                <li><label for="answerA">Alcohol</label><option id="answerA" name="answer" value="0"></li>
-                <li><label for="answerB">Diet Coke</label><option id="answerB" name="answer" value="1"></li>
-                <li><label for="answerC">Chewing Gum</label><option id="answerC" name="answer" value="2"></li>
-                <li><label for="answerD">Exotic Pets</label><option id="answerD" name="answer" value="3"></li>
-              </ol>
-              <input type="submit">
-        </fieldset>
-      </form>
-  <!--Feedback Page-->
-      <h2>Sorry, that's incorrect...</h2>
-      <p>The correct answer was C.</p>
-      <button id="nextQuestionButton">Next question</button>
-  <!--Score Page-->
-      <h2>Not too shabby! You finished the quiz!</h2>
-      <p>you scored 9/10</p>
-      <p>You're definitely Singapore smart!<p>
-      <button id="restartQuizButton">Restart Quiz</button>
+    <main>
+      <div class="quizStart">
+        <h1>Ready to prove you know the skinny of Singapore?</h1>
+      <button type="button" class="startButton">Let's go!</button>
+      </div>
+      <div class="questionAnswerForm">
+      </div>
+    </main>
   </body>
 </html>
