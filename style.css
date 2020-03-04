@@ -19,14 +19,6 @@ header{
   z-index: 1
 }
 
-.logo{
-  height:100px;
-  width:120px;
-  border:1px solid lightgrey;
-  text-align: center;
-  line-height: 100px;
-}
-
 header ul li{
   padding:10px 20px;
   list-style: none;
